@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+  <!-- Home Section -->
+  <div id="home">
+    <div class="container">
+      <nav>
+        <h1>EM <span>JAY</span></h1>
+        <ul id="sidemenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openMenu()"></i>
+      </nav>
+      <div class="header-text">
+        <h2>Welcome to my portfolio</h2>
+        <p>Hi, I am <span>Abdulmajeed</span><br />I'm a web developer with a passion for creating beautiful and functional websites.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="CamScanner 10-16-2024 15.19_1.jpg" width="300" height="500" alt="Abdulmajeed's photo" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            Passionate web developer with experience in frontend and backend development. I enjoy solving problems and building functional, aesthetic web applications using modern technologies.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="openTab('skills', event)">Skills</p>
+            <p class="tab-links" onclick="openTab('experience', event)">Experience</p>
+            <p class="tab-links" onclick="openTab('education', event)">Education</p>
+          </div>
+
+          <div class="tab-content active-tab" id="skills">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+
+          <div class="tab-content" id="experience">
+            <h3>Web Developer at Colab</h3>
+            <p>
+              Full-stack developer using React, JavaScript, Node.js. Built a URL shortener, practiced API integration and version control with Git and GitHub.
+            </p>
+          </div>
+
+          <div class="tab-content" id="education">
+            <h3>Higher National Diploma (HND), Computer Science</h3>
+            <p>
+              Kaduna Polytechnic, Kaduna, Nigeria — Graduated: 2023<br />
+              Software development training at Colab Innovation Hub, with hands-on experience in full-stack development and Agile project collaboration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Responsive and attractive website design using modern HTML, CSS, and frameworks.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>UI/UX Design</h2>
+          <p>User-centered interface designs to improve usability and satisfaction.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>App Design</h2>
+          <p>Mobile and web app design focusing on functionality and user experience.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Section -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="project-list">
+        <div class="projects">
+          <img src="image 1.png" width="350" height="200" alt="Emjay Coffee Shop project screenshot" />
+          <div class="layer">
+            <h3>Emjay Coffee Shop</h3>
+            <p>A coffee ordering web app with real-time order tracking and secure payments.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="projects">
+          <img src="image 2.png" width="350" height="200" alt="Guess Game screenshot" />
+          <div class="layer">
+            <h3>Guess Game</h3>
+            <p>Interactive number guessing game with feedback and limited attempts.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="projects">
+          <img src="image 3.png" width="350" height="200" alt="Handyman Marketplace screenshot" />
+          <div class="layer">
+            <h3>Global Handyman Marketplace</h3>
+            <p>Connects users with local handymen. Features secure payments and service tracking.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> <a href="mailto:majeedlateef82@gmail.com">majeedlateef82@gmail.com</a></p>
+          <p><i class="fa-solid fa-phone"></i> +234 807 898 5010</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="Abdulmajed Abdullateef Tech-Focused Resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © <i class="fa-solid fa-heart"></i> Abdulmajeed Abdullateef</p>
+      </div>
+    </div>
+  </div>a
+
+  <script src="script.js"></script>
+</body>
+</html>
